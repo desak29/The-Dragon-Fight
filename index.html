@@ -2,37 +2,106 @@
 <head>
 <title>The Dragon Fight</title>
 </head>
-<style="text/css">
-body {
-	width:100%;
-	padding:.1%;
-	margin auto;
+<style type="text/css">
+
+
+body {margin:auto;}
+#container{
+		max-width:960px;
+		margin: auto;
+		text-align:center;
 }
-/*this creates the layout for img*/
+.header{
+	margin:auto;
+	text-align: center;
+	clear:both;
+}
+h1{
+	font-size:40px;
+}
 img {
-	margin-all:auto;
-	display:inline-block;
-	width:75%;
-	overflow-wrap: 100%;
+
+max-height:460px;
 }
+#the-fight{
+	float:left;
+	width:25%;
+	display:inline-block;
+}
+.flight{
+	float:right;
+	position relative;
+	width:100%;}
+}
+p.flight{
+	margin-bottom:15px;
+}
+
+
+
+.fight{
+	dosplay:inline-block;
+	width:40%;
+}
+button, input["type=button"{
+	background-color:green;
+	position:relative;
+	margin:5px;
+	padding:20px;
+	font-size:20px;
+}
+
+.healthbar{}
 .choice {
 
 }
+#thedragon{
+	display:inline-block;
+}
+#flee{
+	display:inline-block;
+}
 </style>
+<!-- ##means class -->
 
 <body>
-/*this initiates the fight sequence*/
-	<div choice 
+
+<div id="container">
+	<div id="the message">You have encountered a dragon make your choices wisely!</div>
+	<div class ="header">
+	<H1> the dragon has Arrived</H1>
+	</div>
+
+	<div id="thedragon">
+		<img src="img/dragon.png">
+		<div>
+	
+<div class="flee">
+<img id="flee" src="img/fleeing.png"
+</div>
+
+
 	<div id="the-fight">
 
 		<img src="img/d1.gif" name="myDie1">
 		<img src="img/d1.gif" name="myDie2">
 
 	</div>
+	<div class="flight"
 
+
+
+	</div>
+<div class="button">
 	<input type="button" onclick="throwDice();" value="Fight the dragon!!">
 	<input type="button" onclick="throwDice();" value="Flee!! You Fool!">
-	<input type="button" onclick="throwDice();" value="Rolle the die">
+	<input type="button" onclick="throwDice();" value="Roll the die">
+	</div>
 
+<script type="text/javascript" src="dice.js">
+
+
+	</script>
+	
 </body>
 </html>
